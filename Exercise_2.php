@@ -17,7 +17,23 @@ class Beverage {
     }
 }
 
-$Beverage = new beverage("cold", "black", 2);
-echo $Beverage->get_beverage();
+// add Extend class
+class Beer extends Beverage  {
+    public  $Alcohol;
+
+    function __construct($Alcohol) {
+        $this->Alcohol = $Alcohol;
+    }
+
+    function get_alcohol(){
+        return "Alcohol percentage : ". $this->Alcohol ."%" ;
+    }
+};
+
+ //beer
+$Beer = new Beer(8.5);
+echo $Beer->get_beverage();
 echo "<br>";
-echo $Beverage->get_price();
+echo $Beer->get_alcohol();
+
+
