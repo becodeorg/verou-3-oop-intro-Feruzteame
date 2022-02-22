@@ -10,11 +10,10 @@ class beverage {
         $this->price = $price;
     }
     function get_beverage() {
-        print_r("This beverage is ". $this->temp ." and " .$this->color) ;
-
+        return "This beverage is ". $this->temp ." and " .$this->color;
     }
     function get_price() {
-        print_r("price :" .$this->price) ;
+        return "price :" .$this->price;
     }
 }
 
