@@ -4,7 +4,7 @@ class Beverage {
     public $price;
     public $temp;
 
-    function __construct($temp, $color, $price) {
+    function __construct ( $color, $price,$temp="cold") {
         $this->color = $color;
         $this->temp = $temp;
         $this->price = $price;
@@ -17,7 +17,7 @@ class Beverage {
     }
 }
 
-$Beverage = new Beverage("cold", "black", 2);
+$Beverage = new Beverage( "black", 2);
 echo $Beverage->get_beverage();
 echo "<br>";
 echo $Beverage->get_price();

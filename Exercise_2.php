@@ -15,7 +15,7 @@ class Alcohol extends Beverage  {
 };
 
  //beer
-$Beer = new Beverage("Cold", "Blond", 3.5);
+$Beer = new Beverage( "Blond", 3.5);
 echo $Beer->get_beverage();
 echo "<br>";
 echo $Beer->get_price();
