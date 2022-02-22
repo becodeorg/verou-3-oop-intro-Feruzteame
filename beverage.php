@@ -1,5 +1,5 @@
 <?php
-class beverage {
+class Beverage {
     public $color;
     public $price;
     public $temp ;
@@ -17,7 +17,7 @@ class beverage {
     }
 }
 
-$beverage = new beverage("cold", "black", 2);
-echo $beverage->get_beverage();
+$Beverage = new beverage("cold", "black", 2);
+echo $Beverage->get_beverage();
 echo "<br>";
-echo $beverage->get_price();
+echo $Beverage->get_price();
